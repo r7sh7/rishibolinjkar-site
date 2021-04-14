@@ -3,7 +3,7 @@
 /* to apply throughout the page whenever required */
 :root {
     /* CSS Variables */
-    --primary-color: #1E40AF;
+    --primary-color: #1D4ED8;
 }
 
 body {
@@ -52,3 +52,30 @@ hr {
     display: inline;
     padding: 0rem 0.5rem;
 }
+
+
+/* Navigation */
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.navigation .nav-brand{
+    font-weight: bold;
+    font-size: 1.1rem; /* 1% bigger than what it was */
+}
+
+.navigation .nav-pills{
+    text-align: right;
+}
+
+.navigation .link{   /*OVERWRITING */
+    color: white;
+}
+
+.navigation .link-active{
+    font-weight: bold;
+}
+
