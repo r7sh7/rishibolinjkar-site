@@ -5,10 +5,12 @@
     /* CSS Variables */
     --primary-color: #1D4ED8;
     --dark-gray: #4B5563;
+    --off-white: #E5E7EB;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 hr {
@@ -97,4 +99,37 @@ hr {
     padding-top: 1rem;
     color: var(--dark-gray);
     text-align: center;
+}
+
+
+/* section */
+
+.section{
+    padding: 2rem;
+}
+.section h1{
+    text-align: center;
+}
+
+.ow{
+    background-color: var(--off-white);
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: var(--dark-gray);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link{
+    color: white;
+}
+
+.footer ul{
+    padding-inline-start: 0px ;
 }
