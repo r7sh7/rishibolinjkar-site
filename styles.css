@@ -130,6 +130,11 @@ hr {
     color: white;
 }
 
+.footer-header{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .footer ul{
     padding-inline-start: 0px ;
 }
