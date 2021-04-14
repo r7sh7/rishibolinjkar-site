@@ -4,6 +4,7 @@
 :root {
     /* CSS Variables */
     --primary-color: #1D4ED8;
+    --dark-gray: #4B5563;
 }
 
 body {
@@ -79,3 +80,21 @@ hr {
     font-weight: bold;
 }
 
+
+/* Header */
+
+.hero{
+    padding: 2rem;
+}
+
+.hero .hero-image{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading{
+    padding-top: 1rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
