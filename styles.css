@@ -35,8 +35,8 @@ hr {
     padding: 0.5rem 1rem;
 }
 .link-primary {
-    background-color: var(--primary-color);
-    color: white;
+    text-decoration: none;
+    color: var(--primary-color);
     border-radius: 0.5rem;
 }
 .link-secondary {
@@ -44,6 +44,7 @@ hr {
     border: 1px solid var(--primary-color);
     border-radius: 0.5rem;
 }
+
 
 
 /* Lists */
@@ -101,6 +102,9 @@ hr {
     text-align: center;
 }
 
+.heading-inverted{
+    color: var(--primary-color);
+}
 
 /* section */
 
@@ -138,4 +142,28 @@ hr {
 .footer ul{
     margin-top: 3rem;
     padding-inline-start: 0px ;
+}
+
+
+/* About me  */
+.my-display-image{
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid #4B5563;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* Projects */
+.showcase-list{
+    padding: 2rem;
+}
+
+/* Blog Post */
+
+.blog-header h1{
+    font-size: xx-large;
+    font-weight: 100;
+
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog1</title>
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="container hero">
+        <div class="container-center blog-header">
+            <h1 style="margin-top: 3.5rem; margin-bottom: 0rem;">My experience in setting up a Remote Server</h1>
+            <p style="margin-bottom: 1.75rem; margin-top: 0px; font-weight: 700;">May 2, 2021</p>
+        <img class="hero-image" src="../images/servermanagement.jpeg" style="max-width: 37rem; height: 20rem" />
+        </div>
+    </header>
+    <div class="container container-center">
+        <h1 style="font-weight: 100;">Music Archive Library Management</h1>
+        <div style="margin: 3rem 1.5rem 0rem 0rem"><h2>Introduction</h2></div>
+        <p>
+            Indian classical music is a rich tradition that originated in South Asia and can now be found in all corners of the world. It’s origins date back to sacred Vedic scriptures over 6,000 years ago where chants developed a system of musical notes and rhythmic cycles.
+In this way, Indian classical music is very closely connected to nature, taking inspiration from natural phenomena including the seasons and times of the day to create ‘ragas’ or musical moods and many time cycles or ‘taals’ that have been further codified.
+
+        </p>
+        <p>Indian classical music is generally passed down in an oral tradition where the student would spend many years with their ‘guru’, developing a very special, spiritual bond, imbibing all aspects of the music along with philosophical and moral principles that shape them for life.
+            In recent times, Indian classical music can be learnt in many institutions and has been heavily documented and notated. The recordings of several big artists who have sung self composed classical songs at various important events have been preserved for further study by researchers and scholars in the field. One such organisation, <strong>Jaipur Gunijankhana</strong> of Pune, has a well documented archive of recordings of some popular artists in the country.</p>
+            <p>The main aim of Jaipur Gunijankhana is to provide a medium for people to study and listen to these recordings while restricting their use to non profit purposes only.</p>
+
+           <div style="margin: 3rem 1.5rem 0rem 0rem"><h2>Problem </h2></div> 
+           <p>Jaipur Gunijankhana is an organisation that has a collection of music recordings stored in a cloud storage(google drive) along with a well documented excel file which contains data about the artists, their albums and all the recordings. 
+            They wanted to provide an interface for their users to access the classical music recordings strictly for non profit purposes in a way that no user can actually download or have a copy of any recording which could be sold and profited off. They also wanted to track the users to see which songs they were listening to and other data for analysis. 
+            </p>
+            <p>A group of two other friends and I were given this project to come up with a solution for the problem.</p>
+
+            <div style="margin: 3rem 1.5rem 0rem 0rem"><h2>Solution</h2>
+            <p>After some research and discussion with our mentors, we came up with the solution of using <strong>Plex Media Server</strong> as an interface for the users to access the recordings.</p>
+            <section class="section ow" style="text-align: left; color: var(--dark-gray);">
+                <div class="container container-center">
+                    <h2>What is Plex Media Server?</h2>
+                    <p>Plex Media Server is a user-friendly way to store all your movies, shows, and other media in one place–and make it accessible from any device, whether you’re at home or on-the-go. Plex is a centralized media server system that eliminates virtually every problem you run into while managing a large personal media collection.
+                        The Plex model is simple: you park all your media on a single computer with the Plex server software installed, and then you install Plex on all your other devices. Then, from any of those devices, you can remotely access your entire media library and watch it with no hassle. Plex also lets you add users to access your server(media library) while monitoring them and granting permissions as per your requirements.
+                        </p>
+                        <p>Further, because the Plex model is a server/client one, you don’t have to worry about copying files to your various devices and dealing with issues like playback quality, video resolution, and other details. Your Plex server will transcode all your media content on the fly, so that it plays properly on whatever device you’re using. Not only do you get on-demand streaming to all your devices but you also get absolutely beautiful metadata and art to go along with it.
+                        </p>
+                </div>
+            </section>
+        </div> 
+            <div style="margin: 3rem 1.5rem 0rem 0rem"><h3>How we achieved our goal</h3>
+                <ol>
+                    <li><p>To host the Plex Media Server(PMS), we configured a virtual ubuntu server on our local machine and installed the plex server on it.</p></li>
+                    <li><p>We wrote a short python program to tag all the recordings before uploading them to PMS in a way that each artist along with their recordings and albums would be displayed separately in a single library. The program would make use of data from the excel sheet to update the metadata(tagging) of all the recordings and store them on the drive.</p></li>
+                    <li><p>For PMS to access these recordings stored on the cloud storage we had to first mount the files onto the ubuntu server where plex was hosted. We achieved this using a command line program called <strong>Rclone</strong>. Using Rclone we configured a remote for google drive which helped us mount the files.</p></li>
+                    <li><p>To upload the files(tagged recordings) to PMS we created a library in plex and added the local path of the mounted google drive to this library so that it remains in sync. Now any new file added to the drive will be mounted onto the server which will be reflected in the plex library after a scan.</p></li>
+                    <li><p>For any user to access the recordings, they simply have to download and create a plex account and provide us with their email id associated with this account. We will then be able to share the library with them as well as monitor and grant special permissions to prevent piracy.</p></li>
+                </ol>
+                <p>With this 5 step approach we were able to successfully solve all the problems related to this project. </p>
+            </div> 
+            <div style="margin: 3rem 1.5rem 0rem 0rem"><h2>My Contribution and Learnings</h2>
+            <p>In this group project I was responsible for setting up the plex media server on the virtual Ubuntu server. I also set up the rclone remote to ensure proper mounting of the google drive on our Ubuntu Linux server and create a library to sync the google drive file with the Plex Media Server.</p>
+            <p>This project has personally been a great learning experience for me in terms of networking principles and server management.</p></div>
+            <div style="margin: 3rem 1.5rem 0rem 0rem"><h3>Key Takeaways -</h3>
+                <ul>
+                    <li>Learnt how to ssh into a virtual server for remote access</li>
+                    <li>Learnt about SSH Authentication keys - public and private keys (more secure than simply using a password)</li>
+                    <li>Setting up basic firewall (ufw firewall)</li>
+                    <li>Setting up a VNC connection and using SSH tunneling(for a secure connection) to access the remote server via GUI</li>
+                    <li>Using Rclone to configure a remote to mount google drive files onto the server</li>
+                    <li>Several linux commands to create a user, grant administrative privileges, changing mode of files(chmod), moving and copying files, downloading and installing files as well as configuring certain ports as needed.
+                    </li>
+                </ul>
+            </div> 
+            <div style="margin: 3rem 1.5rem 0rem 0rem"><h3>Challenges Faced</h3>  
+            <p>While working on this project I faced some challenges which taught me a lot. I will highlight some of the challenges which were harder to resolve than the rest. </p> 
+            <ul>
+                <li><p>While using rclone to access the google drive for mounting, configuring the remote to access the google account was somewhat confusing. I recommend creating your own client ID and client secret using google OAuth instead of leaving it blank.</p></li>
+                <li><p>While testing to see if the music files added to plex were audible and functioning as expected, we could not hear any audio. After some research I learnt that VNC connections to remote servers does not support audio connections. To solve this issue I learnt how to configure the plex server for remote access (directly from my local machine’s browser). I did this by configuring certain ports on the ubuntu server to allow remote connections to the plex server which resides on the ubuntu server.</p></li>
+            </ul>   
+            </div> 
+            <div style="margin: 3rem 1.5rem 0rem 0rem"><h2>Conclusion</h2>
+                <p> I am really grateful to have gotten this opportunity to work on a project which would enable research and study on the rich musical heritage of my country.
+                    This was the first time I was working on such a project and had to learn on the go to complete some of the tasks. I would encourage everyone to try and set up a virtual server at least once to experience and learn some of the concepts of computer networking! :)
+                    </p>
+            </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-header">Social Media</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/r7sh7">
+                    Github
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/rishi-bolinjkar-211a43174">
+                    LinkdIn
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/R7sh71">
+                    Twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
