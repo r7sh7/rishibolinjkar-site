@@ -1,0 +1,117 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #FCD34D;
+    --dark-grey: #374151;
+}
+
+body{
+    display: block;
+    font-family: 'Kalam', cursive;
+    margin:0px
+}
+
+hr{
+    margin: 3rem 0rem;
+}
+
+h1{
+    color: var(--dark-grey);
+}
+
+textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: larger;
+    outline: none;
+    font-family: 'Kalam', cursive;
+    
+}
+
+header{
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    background-color: var(--primary-color);
+}
+
+.footer{
+    padding: 1.5rem;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    bottom: 0px;
+    display: block;
+}
+
+footer p{
+    margin: auto;
+    max-width: 600px;
+    font-size: larger;
+    padding: 1rem 0rem;
+}
+
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 7rem;
+
+}
+
+.container .container-header{
+    margin: 4rem 0rem 0rem 0rem;
+    border: solid black 1px;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container-item{
+    padding: 0.75rem;
+    color: var(--dark-grey);
+}
+
+.flex-container{
+
+    display: flex;
+    justify-content: center;
+}
+
+.flex-child1{
+    border: 1px solid black;
+    display: inline-block;
+    height: 10rem;
+    width: 50%;
+    margin: 0px;
+    padding: 1rem;
+}
+
+.flex-child2{
+    border: 1px solid black;
+    font-size: larger;
+    padding: 1rem;
+    display: inline-block;
+    height: 10rem;
+    width: 50%;
+    margin: 0px;
+}
+
+
+.btn{
+    font-size: medium;
+    border: 1px solid black;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--dark-grey);
+    border-radius: 00.5rem;
+}
