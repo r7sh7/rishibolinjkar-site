@@ -7,12 +7,14 @@ I am Hrishikesh Bolinjkar, a 3rd year BSc(Computer Science) student from Ferguss
 
 For now, I know:
 
-1. Javascript
 1. HTML 
 1. CSS
+1. Javascript
+1. React JS
 1. Dart
 1. Flutter
 1. Firebase
 1. C/C++
 1. Java   
+
 
