@@ -1,0 +1,60 @@
+{
+    "blogs" : [
+        {
+            "id": 1,
+            "title": "My experience in setting up a Remote Server",
+            "date": "May 2, 2021",
+            "snippet": "Indian classical music is a rich tradition that originated in South Asia and can now be found in all corners of the world. It’s origins date back to sacred Vedic scriptures over 6,000 years ago where chants developed a system of musical notes and rhythmic cycles. In this way, Indian classical music is very closely connected to nature, taking inspiration from natural phenomena including the seasons and times of the day to create ‘ragas’ or musical moods and many time cycles or ‘taals’ that have been further codified."
+        },
+        {
+            "id": 2,
+            "title": "Dummy blog 2",
+            "date": "May 4, 2020",
+            "snippet": "he most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words."
+
+        },
+        {
+            "id": 3,
+            "title": "Dummy blog 3",
+            "date": "April 20, 2021",
+            "snippet": "he most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words."
+
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Are you a manchester united fan?",
+            "date": "November, 2020",
+            "description": "Do you know your team well? Let's play a quiz and find out!",
+            "link":"https://replit.com/@r7sh7/Mark-One?embed=true",
+            "code":"https://replit.com/@r7sh7/Mark-One"
+        },
+        {
+            "id": 2,
+            "title": "Love minions?",
+            "date": "December, 2020",
+            "description": "Check out this cool minion translator to learn how to speak in banana",
+            "link":"./projects/MinionTranslator/index.html",
+            "code":"https://github.com/r7sh7/minion-translator"
+        },
+        {
+            "id": 3,
+            "title": "Having a hard time with emojis?",
+            "date": "January, 2021",
+            "description": "Try out this emoji interpreter to know the events associated with emojis",
+            "link":"https://cgqkv.csb.app/",
+            "code":"https://codesandbox.io/s/cgqkv"
+        },
+      
+        {
+            "id": 4,
+            "title": "Want to practice before your trip to Vegas?",
+            "date": "February, 2021",
+            "description": "Try out this two player blackjack game and compete against a friend!",
+            "link":"./projects/blackjack/index.html",
+            "code":"https://codesandbox.io/s/cgqkv"
+            
+        }
+    ]
+}
