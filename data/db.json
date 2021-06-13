@@ -22,21 +22,23 @@
         }
     ],
     "projects": [
+        
         {
             "id": 1,
-            "title": "Are you a manchester united fan?",
-            "date": "November, 2020",
-            "description": "Do you know your team well? Let's play a quiz and find out!",
-            "link":"https://replit.com/@r7sh7/Mark-One?embed=true",
-            "code":"https://replit.com/@r7sh7/Mark-One"
+            "title": "Project Manager Web App",
+            "date": "May, 2021",
+            "description": "Use this app to manage projects and collaborate with your group",
+            "link":"https://todo-app-ffcd4.web.app",
+            "code":"https://github.com/r7sh7/project-manager"
         },
         {
             "id": 2,
-            "title": "Love minions?",
-            "date": "December, 2020",
-            "description": "Check out this cool minion translator to learn how to speak in banana",
-            "link":"./projects/MinionTranslator/index.html",
-            "code":"https://github.com/r7sh7/minion-translator"
+            "title": "Want to practice before your trip to Vegas?",
+            "date": "February, 2021",
+            "description": "Try out this two player blackjack game and compete against a friend!",
+            "link":"./projects/blackjack/index.html",
+            "code":"https://codesandbox.io/s/cgqkv"
+            
         },
         {
             "id": 3,
@@ -46,15 +48,21 @@
             "link":"https://cgqkv.csb.app/",
             "code":"https://codesandbox.io/s/cgqkv"
         },
-      
         {
             "id": 4,
-            "title": "Want to practice before your trip to Vegas?",
-            "date": "February, 2021",
-            "description": "Try out this two player blackjack game and compete against a friend!",
-            "link":"./projects/blackjack/index.html",
-            "code":"https://codesandbox.io/s/cgqkv"
-            
+            "title": "Love minions?",
+            "date": "December, 2020",
+            "description": "Check out this cool minion translator to learn how to speak in banana",
+            "link":"./projects/MinionTranslator/index.html",
+            "code":"https://github.com/r7sh7/minion-translator"
+        },
+        {
+            "id": 5,
+            "title": "Are you a manchester united fan?",
+            "date": "November, 2020",
+            "description": "Do you know your team well? Let's play a quiz and find out!",
+            "link":"https://replit.com/@r7sh7/Mark-One?embed=true",
+            "code":"https://replit.com/@r7sh7/Mark-One"
         }
     ]
 }
