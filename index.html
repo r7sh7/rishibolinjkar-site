@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>My Web Development Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand">WEBDEVELOPER</div>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="/">Home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/projects.html">Projects</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/blogs.html">Blogs</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/about.html">About Me</a>
-            </li>
-        </ul>
-    </nav>
-
-    <header class="hero">
-        <img class="hero-image" src="images/hero.svg" />
-        <h1 class="hero-heading">My <span style="color: var(--primary-color)">Web Development</span> Portfolio</h1>
-    </header>
-
-    <section class="section ow">
-        <div class="container container-center">
-            <h1>Technologies</h1>
-            <p>I am familiar with HTML5, CSS3, Git, Github, Javascript, ReactJS, NodeJS, Flutter, Firebase and Web
-                Hosting</p>
+    <div class="body-container">
+            <nav class="site-nav">
+                <a href="/" class="nav-logo">H B</a>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-item active">Home</a></li>
+                    <li><a href="/projects.html" class="nav-item ">Projects</a></li>
+                    <li><a href="/blogs.html" class="nav-item ">Blogs</a></li>
+                </ul>
+                <div class="theme-toggle">Switch</div>
+            </nav>
+        <section class="intro">
+            <img src="/images/me.jpg" alt="Hrishikesh Bolinjkar display picture" class="display-pic">
+            <p class="intro-title">Hi, I'm Hrishikesh Bolinjkar</p>
+            <h1 class="intro-heading">Building modern and beautiful<br>web apps.</h1>
+            <p class="intro-subheading">a <span class="text-highlight">Web Developer</span> focused on<br><span class="text-highlight"> detail oriented</span> and<span class="text-highlight"> responsive </span> web development.</p>
+            <a href="#contact" class="button button-primary">Connect with me</a>
+        </section>
+        <section class="feature container">
+            <div class="feature-image-container">
+                <img src="/images/me.jpg" alt="About me image" class="feature-image">
+            </div>
+            <div class="feature-content-container">
+                <h1 class="feature-heading">About Me</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#" class="button button-secondary">Go to Projects</a>
+            </div>
+        </section>
+        <section class="feature-rev container">
+            <div class="feature-image-container">
+                <img src="/images/me.jpg" alt="About me image" class="feature-image">
+            </div>
+            <div class="feature-content-container">
+                <h1 class="feature-heading">Blogs</h1>
+                <p class="feature-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#" class="button button-secondary">Go to Blogs</a>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h1 class="contact-heading">Lets Talk!</h1>
+            <p class="contact-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="social-links">
+                <a><img src="./images/svg-icon-pack/github.svg" height="24px" width="24px"></a>
+                <a><img src="./images/svg-icon-pack/insta.svg" height="24px" width="24px"></a>
+                <a><img src="./images/svg-icon-pack/lindkin.svg" height="24px" width="24px"></a>
+                <a><img src="./images/svg-icon-pack/twitter.svg" height="24px" width="24px"></a>
+            </div>
+            <p class="contact-subheading">
+                Or write to me at <br>
+                <a href="bolinjkar.rishi@gmail.com">bolinjkar.rishi@gmail.com</a>
+            </p>
+        </section>
+    </div>
+    <footer class="footer-container">
+        <a href="/" class="footer-heading">Hrishikesh Bolinjkar</a>
+        <nav class="footer-nav">
+            <ul class="footer-nav-menu">
+                <li><a href="/" class="nav-item active">Home</a></li>
+                <li><a href="/projects.html" class="nav-item ">Projects</a></li>
+                <li><a href="/blogs.html" class="nav-item ">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a><img src="./images/svg-icon-pack/github.svg" height="24px" width="24px"></a>
+            <a><img src="./images/svg-icon-pack/insta.svg" height="24px" width="24px"></a>
+            <a><img src="./images/svg-icon-pack/lindkin.svg" height="24px" width="24px"></a>
+            <a><img src="./images/svg-icon-pack/twitter.svg" height="24px" width="24px"></a>
         </div>
-    </section>
-
-    <section class="section">
-        <div class="container container-center">
-            <h1>Projects</h1>
-            <p>I love to showcase my work and you can check some of my projects hosted online </p>
-            <div style="padding: 1rem 0rem;"><a class="link link-secondary" href="projects.html">Browse projects</a></div>
-        </div>
-    </section>
-
-    <section class="section ow">
-        <div class="container container-center">
-            <h1>Blogs</h1>
-            <p>I also try to document my journey by writing some technical and non techinal blogs. Do check them out</p>
-            <div style="padding: 1rem 0rem;"><a class="link link-secondary" href="blogs.html">Read blogs</a></div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-header">Social Media</div>
-        <ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
-                <a class="link" href="https://github.com/r7sh7">
-                    Github
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://www.linkedin.com/in/rishi-bolinjkar-211a43174">
-                    LinkdIn
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://twitter.com/R7sh71">
-                    Twitter
-                </a>
-            </li>
-        </ul>
     </footer>
-
+    
 </body>
-
 </html>
