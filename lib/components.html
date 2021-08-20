@@ -1,139 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
-    <link href="/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="components.css">
+    <title>My Component Library</title>
 </head>
-
 <body>
-    <h1>Welcome to My Component Library</h1>
-    <p>I am making a component library which will make all my projects look good and consistent</p>
-
-    <hr>
-
-    <h2>@typography</h2>
-
-    <h1>This is the biggest heading</h1>
-    <h2>Second biggest</h2>
-    <p>This is normal free flowing text which will wrap at the end like a paragraph</p>
-    <small>This is relatively smaller text</small>
-
-    <hr>
-
-    <h2>@container</h2>
-
-    <h3>fluid container</h3>
-    <div class="container">This is a fluid container and will go till the end of the page</div>
-    <h3>center container</h3>
-    <div class="container container-center">This is a centered container which will go till the specified width</div>
-
-    <hr>
-
-    <h2>@links</h3>
-
-        <a class="link link-primary" href="/">Primary Link</a>
-        <a class="link link-secondary" href="/">Secondary Link</a>
-
-        <hr>
-
-        <h2>@lists</h2>
-
-        <h3>unordered list</h3>
-        <p>This list will not have bullets</p>
-        <ul class="list-non-bullet">
-            <li>Item One</li>
-            <li>Item Two</li>
-            <li>Item Three</li>
-        </ul>
-
-        <h3>inline unordered list</h3>
-        <ul class="list-non-bullet">
-            <li class="list-item-inline">Inline Item One</li>
-            <li class="list-item-inline">Inline Item Two</li>
-            <li class="list-item-inline">Inline Item Three</li>
-        </ul>
-
-        <h3>reverse ordered list</h3>
-        <ol>
-            <li>Inline Item Three</li>
-            <li>Inline Item Two</li>
-            <li>Inline Item One </li>
-        </ol>
-
-        <hr>
-
-        <h2>@nav</h2>
-        <nav class="navigation container">
-            <div class="nav-brand">IAmDeveloper</div>
-            <ul class="list-non-bullet nav-pills">
-                <li class="list-item-inline">
-                    <a class="link link-active" href="/">Home</a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="link" href="/">Projects</a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="link" href="/">Blogs</a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="link" href="/">About</a>
-                </li>
-            </ul>
-        </nav>
-
-        <hr>
-
-        <h2>@header</h2>
-        <header class="hero">
-            <img class="hero-image" src="/images/hero.svg" />
-            <h1 class="hero-heading">My <span style="color: var(--primary-color)">Web Development</span> Portfolio</h1>
+    <div class='body-container'>
+        <header>
+            <a class="logo" href="#">H B</a>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-item active" href="#">Home</a></li>
+                    <li><a class="nav-item" href="#">Projects</a></li>
+                    <li><a class="nav-item" href="#">Blogs</a></li>
+                </ul>
+            </nav>
+            <div class="toggle">
+                Toggle 
+            </div>
         </header>
-
-        <hr>
-
-        <h2>@section</h2>
-        <section class="section">
-            <div class="container container-center">
-                <h1>white section</h1>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-            </div>
+        <section class="hero">
+            <img src="/images/me.jpg" alt="Hrishikesh Bolinjkar" class="hero-image"/>
+            <p class="hero-title"> Hi, I'm Hrishikesh Bolinjkar </p>
+            <h1 class="hero-heading">Building beautiful and modern web apps.</h1>
+            <p class="hero-subheading">a <span class="text-highlight">Web Developer</span class="text-highlight"> focused on <span class="text-highlight">detail oriented</span> design and development</p>
+            <a href="#" class="button button-primary">Connect with me</a>
         </section>
-
-        <section class="section ow">
-            <div class="container container-center">
-                <h1>offwhite section</h1>
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        <section class="container feature">
+            <div>
+                <img src="/images/me.jpg" alt="Hrishikesh Bolinjkar" class="feature-image"/>
             </div>
+            <div>
+                <h1>About Me</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </div>
+            
         </section>
-
-        <hr>
-
-        <h2>@footer</h2>
-        <footer class="footer">
-            <div class="footer-header">Some small heading inside footer</div>
-            <ul class="social-links list-non-bullet">
-                <li class="list-item-inline">
-                    <a class="link" href="/">
-                        SocialOne
-                    </a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="link" href="/">
-                        SocialTwo
-                    </a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="link" href="/">
-                        SocialThree
-                    </a>
-                </li>
-            </ul>
-        </footer>
-
+    </div>
 </body>
-
 </html>
