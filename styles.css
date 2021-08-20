@@ -43,6 +43,7 @@ img, a{
     display: flex;
     flex-direction: column;
     max-width: 1200px;
+    margin: auto;
     overflow-x: hidden;
 }
 .container{
@@ -50,7 +51,7 @@ img, a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding: 4.5rem 0;
     min-height: 70vh;
 }
 
@@ -97,6 +98,10 @@ img, a{
 .nav-item{
     color: var(--tertiary-text);
     margin: 0.5rem auto;
+}
+.nav-item:hover{
+    color: var(--primary-text);
+    font-size: 600;
 }
 .active{
     font-weight: 700;
@@ -174,13 +179,14 @@ img, a{
 }
 
 .contact-heading{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin: 1rem auto;
 }
 .contact-content, .contact-subheading{
     text-align: center;
+    max-width: 600px;
 }
 .social-link-container{
     display: flex;
@@ -200,10 +206,9 @@ img, a{
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-bg);
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
 }
 .footer-heading{
     color: var(--secondary-text);
@@ -252,6 +257,8 @@ img, a{
         max-width: 50%;
         width: 50%;
     }
+
+
     .footer-container{
         flex-direction: row;
         align-items: center;
