@@ -1,169 +1,230 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-/* to apply throughout the page whenever required */
-:root {
-    /* CSS Variables */
-    --primary-color: #1D4ED8;
-    --dark-gray: #4B5563;
-    --off-white: #E5E7EB;
+/* variables */
+:root{
+    --primary-bg: #ffffff;
+    --secondary-bg: #f3f4f6;
+    --hover-bg: #ffffff;
+  
+    --primary-text: #000000;
+    --secondary-text: #2d3748;
+    --tertiary-text: #5f6c80;
+  
+    --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-}
-
-hr {
-    margin: 2rem 0rem;
-}
-
-/* container */
-
-.container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.container-center{
-    max-width: 600px;
-    margin: auto;
-}
-
-/* links */
-
-.link {
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-}
-.link-primary {
-    text-decoration: none;
-    color: var(--primary-color);
-    border-radius: 0.5rem;
-}
-.link-secondary {
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 0.5rem;
 }
 
-
-
-/* Lists */
-
-.list-non-bullet{
-    list-style: none;
-}
-.list-item-inline{
-    display: inline;
-    padding: 0rem 0.5rem;
+li{
+    list-style-type: none;
 }
 
-
-/* Navigation */
-
-.navigation {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    border-bottom-left-radius: 1rem;
-}
-.navigation .nav-brand{
-    font-weight: bold;
-    font-size: 1.1rem; /* 1% bigger than what it was */
+/* base styles */
+html{
+    scroll-behavior: smooth;
 }
 
-.navigation .nav-pills{
-    text-align: right;
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+img, a{
+    display: inline-block;
+}
+.body-container{
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    overflow-x: hidden;
 }
 
-.navigation .link{   /*OVERWRITING */
-    color: white;
-}
-
-.navigation .link-active{
-    font-weight: bold;
-}
-
-
-/* Header */
-
-.hero{
-    padding: 2rem;
-}
-
-.hero .hero-image{
-    max-width: 350px;
-    display: block;
-    margin: auto;
-}
-
-.hero .hero-heading{
-    padding-top: 1rem;
-    color: var(--dark-gray);
+.button{
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border: 2px solid var(--primary-text);
+    min-width: 14rem;
     text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase; 
+    transition: all 0.3s ease-in-out;
 }
 
-.heading-inverted{
-    color: var(--primary-color);
+.button-primary{
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+.button-primary:hover{
+    opacity: 0.8;
 }
 
-/* section */
-
-.section{
-    padding: 2rem;
+.button-secondary{
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
 }
-.section h1{
-    text-align: center;
-}
-
-.ow{
-    background-color: var(--off-white);
+.button-secondary:hover{
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
 }
 
-
-/* Footer */
-
-.footer{
-    background-color: var(--dark-gray);
-    padding: 3rem 1rem;
-    text-align: center;
-    color: white;
-    border-top-right-radius: 1rem;
-}
-
-.footer .link{
-    color: white;
-}
-
-.footer-header{
-    font-weight: bold;
+/* fonts */
+.nav-logo, .footer-heading{
     font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-text);
+    transition: color 0.25s ease-in;
+}
+.nav-logo:hover{
+    color: var(--tertiary-text);
+}
+.nav-item{
+    color: var(--tertiary-text);
+    margin: 0.5rem auto;
+}
+.text-highlight{
+    color: var(--primary-text);
+    font-weight: 500;   
 }
 
-.footer ul{
-    margin-top: 3rem;
-    padding-inline-start: 0px ;
+/* mobile styles */
+.site-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0rem;
+    max-width: 100%;
+}
+
+.site-nav .nav-menu{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    min-height: 70vh;
+}
+.display-pic{
+    height:8rem;
+    width: 8rem;
+    margin: 1rem 0;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 0.5rem black);
+}
+.intro-title{
+    color: var(--secondary-text);
+    font-size: 1.35rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.intro-heading{
+    color: var(--primary-text);
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0rem;
+
+}
+.intro-subheading{
+    color: var(--tertiary-text);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 2rem;
 }
 
 
-/* About me  */
-.my-display-image{
-    height: 15rem;
-    width: 15rem;
-    border: 1px solid #4B5563;
-    border-radius: 50%;
-    display: block;
-    margin: auto;
+.feature-image-container{
+    margin: 1rem 0;
+}
+.feature-image-container img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0.2rem;
+}
+.feature-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.feature-content, .contact-content, .contact-subheading{
+    color: var(--secondary-text);
+    line-height: 2rem;
+    margin: 1rem 0;
 }
 
-/* Projects */
-.showcase-list{
-    padding: 2rem;
+.contact-heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem auto;
+}
+.contact-content, .contact-subheading{
+    text-align: center;
+}
+.social-link-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 0rem;
+    width: 100%;
+    max-width: 200px;
+}
+.email{
+    text-decoration: underline;
 }
 
-/* Blog Post */
 
-.blog-header h1{
-    font-size: xx-large;
-    font-weight: 100;
+.footer-container{
+    background-color: var(--secondary-bg);
+    min-height: 50vh;
+    padding: 2rem 0;
+    justify-content: space-between;
 
+}
+.footer-heading{
+    color: var(--secondary-text);
+    font-size: 1.3rem;
+}
+.footer-nav-container{
+    margin: 2rem auto;
+}
+.footer-nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+
+}
+
+
+/* large tablets and laptops */
+@media screen and (min-width: 960px){
+    
+}
+
+
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+    
 }
